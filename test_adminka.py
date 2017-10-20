@@ -44,10 +44,10 @@ class Admin(unittest.TestCase):
         # testmail = Feedback(driver)
         phone = driver.find_element_by_name("login")
         phone.clear()
-        phone.send_keys("79123451234")
+        phone.send_keys("*******")
         password = driver.find_element_by_name("pass")
         password.clear()
-        password.send_keys("test1")
+        password.send_keys("********")
         password.send_keys(Keys.ENTER)
         WebDriverWait(self.driver, 15).until(
             expected_conditions.visibility_of_element_located((By.CLASS_NAME, "xn-text")))
